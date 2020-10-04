@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+    <bean id="person" class="model.Person">
+        <property name="pname">
+            <value>bbb</value>
+        </property>
+
+        <!-- list -->
+        <property name="strList">
+            <list>
+                <value>zhaolist</value>
+                <value>qianlist</value>
+                <value>sunlist</value>
+            </list>
+        </property>
+
+        <!-- set -->
+        <property name="strSet">
+            <set>
+                <value>zhaoset</value>
+                <value>qianset</value>
+                <value>sunset</value>
+            </set>
+        </property>
+
+        <!-- map -->
+        <property name="strMap">
+            <map>
+                <entry key="key1">
+                    <value>value1</value>
+                </entry>
+                <entry key="key2">
+                    <value>value2</value>
+                </entry>
+            </map>
+        </property>
+
+        <!-- 测试构造注入 -->
+
+    </bean>
+    <!-- 有参构造的bean -->
+
+
+</beans>
